@@ -1,0 +1,20 @@
+#免密支付最大限额
+pay:
+  nopassword:
+    maxAmountPerDeal: 10000
+  #免密支付每日最大限额
+    maxAmountTotal: 50000
+    user:
+      name: 传智-虎哥
+      age: 21
+      girls:
+        - 刘亦菲
+        - 范冰冰
+        - 迪丽热巴
+spring:
+  datasource:
+    hikari:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/mybatis?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+      username: root
+      password: password
