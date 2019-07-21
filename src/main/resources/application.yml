@@ -41,5 +41,3 @@ mybatis:
 logging:
   level:
     cn.itcast: debug
-  git config --global user.name "root"
-  git config --global user.email "email@example.com"
