@@ -1,0 +1,45 @@
+spring:
+  profiles:
+    active: dev
+  mvc:
+    servlet:
+      path: /
+      load-on-startup: 1
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/mybatis?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+    username: root
+    password: password
+
+
+
+
+#免密支付最大限额
+pay:
+  nopassword:
+    maxAmountPerDeal: 1000
+  #免密支付每日最大限额
+    maxAmountTotal: 5000
+    user:
+      name: 传智-虎哥
+      age: 21
+      girls:
+        - 刘亦菲
+        - 范冰冰
+        - 柳岩
+        - 古力娜扎
+        - 迪丽热巴
+server:
+  port: 8080
+#以下是mybatis的配置，扫描包和映射路径，
+mybatis:
+  type-aliases-package: com.itcase.bank.pojo
+  mapper-locations: mappers/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+#用来记录日志
+logging:
+  level:
+    cn.itcast: debug
+  git config --global user.name "root"
+  git config --global user.email "email@example.com"
